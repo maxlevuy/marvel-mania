@@ -45,20 +45,18 @@ const boton2 = document.createElement('button')
 boton2.innerText = 'TERMINAR COMPRA'
 document.body.append(boton2)
 
-boton.onclick = () => {
-const productoSeleccionado = productos[selectTag.selectedIndex]
-carrito.push(productoSeleccionado)
+boton.onclick = ()=>{
+  const productoSeleccionado = productos[selectTag.selectedIndex]
+  console.log(selectTag.selectedIndex)
+  carrito.push(productoSeleccionado)
+  console.log(carrito.length)
 }
 
-boton2.onclick = () => {
-console.log(carrito)
-let totalCompra = 0
-carrito.forEach((prod) => {
+boton2.onclick = () =>{
+  console.log(carrito)
+  let totalCompra = 0
+  carrito.forEach((prod)=>{
     totalCompra = totalCompra + prod.precio
-})
-
-  //alert(`El precio total a pagar es ${totalCompra}`)
-const p = document.createElement('p')
-p.innerText = `El precio total a pagar es ${totalCompra}`
-document.body.append(boton)
+  })
+  alert(`El precio final es ${totalCompra}`)
 }
