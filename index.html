@@ -6,75 +6,218 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MarvelManía - La tienda n°1 del condado</title>
     <link rel="stylesheet" href="./style/bootstrap.css">
+    <link rel="stylesheet" href="./style/styles.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg" style="background-color: rgb(3, 3, 57);">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="./index.html"><img class="btn btn-outline-light btn-floating img-fluid" src="./img/logo.jpg" alt="logo"></a>
-            </div>
-        </nav>
+    <a class="navbar-brand" href="./index.html"><img class="btn btn-floating img-fluid min-vw-70" src="./img/logo.png" alt="logo"></a>
+    <header class="container-fluid bg-dark position-sticky top-0">
+    <ul
+        class="nav nav-pills mb-3 py-3 container"
+        id="pills-tab"
+        role="tablist"
+    >
+        <li class="nav-item text-primary" role="presentation">
+        <a
+            class="nav-link "
+            id="pills-home-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-home"
+            type="button"
+            role="tab"
+            aria-controls="pills-home"
+            aria-selected="true"
+            >Home</a
+        >
+        </li>
+        <li class="nav-item" role="presentation">
+        <a
+            class="nav-link active"
+            id="pills-profile-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-profile"
+            type="button"
+            role="tab"
+            aria-controls="pills-profile"
+            aria-selected="false"
+            >Productos</a
+        >
+        </li>
+        <li class="nav-item" role="presentation">
+        <a
+            class="nav-link"
+            id="pills-contact-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-contact"
+            type="button"
+            role="tab"
+            aria-controls="pills-contact"
+            aria-selected="false"
+            >Carrito</a
+        >
+        </li>
+    </ul>
     </header>
-    <h1 class="p-3 mb-2 bg-primary .bg-gradient text-white text-center">MarvelManía - La tienda n°1 del condado</h1>
+    <div class="alert container position-sticky top-0 alert-primary hide" role="alert">
+    Producto Añadido al carrito!
+    </div>
+    <div class="alert container position-sticky top-0 alert-danger remove" role="alert">
+    Producto removido!
+    </div>
+    <div class="tab-content" id="pills-tabContent">
+    <div
+        class="tab-pane fade "
+        id="pills-home"
+        role="tabpanel"
+        aria-labelledby="pills-home-tab">
+        1
+    </div>
     <section>
         <video class="min-vw-100" src="./video/video.mp4" controls autoplay></video>
     </section>
-    <div class="text-center">
-        <h2 id="titulo1">Ingresa tus datos</h2>
-        <form id="formInicial">
-            <input type="text" name="name" id="name" placeholder="name" />
-            <input type="text" name="lastname" id="lastname" placeholder="lastname" />
-            <input type="text" name="email" id="email" placeholder="email" />
-            <input type="number" name="edad" id="edad" placeholder="edad" />
-            <input type="submit" value="ENVIAR" />
-        </form>
+    <div
+        class="tab-pane fade show active container"
+        id="pills-profile"
+        role="tabpanel"
+        aria-labelledby="pills-profile-tab">
+        <h2 class="h4 m-4 text-primary">Productos</h2>
+        <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+        <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-primary">Funko Deadpool</h5>
+            <img src="./img/dead1.jpg" class="card-img-top" alt="dead1">
+            <div class="card-body">
+                <p class="card-text text-white-50 description">Desde la primera aparición, dead pool, como un estilizado vinilo pop de funko.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 950</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+            </div>
+            </div>
+            </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-primary">DVD Marvel</h5>
+            <img src="./img/dvd.jpg" class="card-img-top" alt="DVD">
+            <div class="card-body">
+                <p class="card-text text-white-50 description">Coleccion completa del universo Marvel.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 4000</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+            </div>
+            </div>
+            </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-primary">Funko Ironman</h5>
+            <img src="./img/iron.jpg" class="card-img-top" alt="iron">
+            <div class="card-body">
+                <p class="card-text text-white-50 description">Avengers Endgame: Tony Stark con el Guantelete del Infinito.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 980</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+            </div>
+            </div>
+            </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-primary">Llaveros</h5>
+            <img src="./img/llavero.jpg" class="card-img-top" alt="llavero">
+            <div class="card-body">
+                <p class="card-text text-white-50 description">Lote de llaveros de Marvel, pack sorpresa con 6 llaveros aleatorios.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 1100</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+            </div>
+            </div>
+            </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-primary">Poster</h5>
+            <img src="./img/poster.jpg" class="card-img-top" alt="poster">
+            <div class="card-body">
+                <p class="card-text text-white-50 description">Poster de Marvel oficial.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 600</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+            </div>
+            </div>
+            </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-primary">Funko Profesor X</h5>
+            <img src="./img/profx.jpg" class="card-img-top" alt="profx">
+            <div class="card-body">
+                <p class="card-text text-white-50 description">Funko de Charles Xavier, tambien conocido como el profesor X</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 1050</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+            </div>
+            </div>
+            </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-primary">Funko Stan Lee</h5>
+            <img src="./img/stan.jpg" class="card-img-top" alt="stan">
+            <div class="card-body">
+                <p class="card-text text-white-50 description">Funko edición especial en homenaje al creador de tu universo favorito</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 1100</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+            </div>
+            </div>
+            </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-primary">Funko Venom</h5>
+            <img src="./img/venom.jpg" class="card-img-top" alt="venom">
+            <div class="card-body">
+                <p class="card-text text-white-50 description">Funko Pop Marvel: Venom - Venom Eddie Brock</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 750</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+            </div>
+            </div>
+            </div>
+        </div>
+        </div>
     </div>
-    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <div
+        class="tab-pane fade carrito"
+        id="pills-contact"
+        role="tabpanel"
+        aria-labelledby="pills-contact-tab"
+    >
+    <br>
+    <table class="table table-dark table-hover">
+        <thead>
+        <tr class="text-primary">
+            <th scope="col">#</th>
+            <th scope="col">Productos</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Cantidad</th>
+        </tr>
+        </thead>
+        <tbody class="tbody">
+        </tbody>
+    </table>
+    <br><br>
+    <div class="row mx-4">
+        <div class="col">
+        <h3 class="itemCartTotal text-white">Total: 0</h3>
         </div>
-        <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="10000">
-            <img src="./img/dvd.jpg" class="d-block w-100" alt="DVD">
-            <div class="carousel-caption d-none d-md-block">
-            <h3>DVDS ORIGINALES</h3>
-            <p>Las mejores películas del universo Marvel</p>
-            </div>
+        <div class="col d-flex justify-content-end">
+        <button class="btn btn-success">COMPRAR</button>
         </div>
-        <div class="carousel-item" data-bs-interval="2000">
-            <img src="./img/funko.jpg" class="d-block w-100" alt="funko">
-            <div class="carousel-caption d-none d-md-block">
-            <h3>FUNKOS DE MARVEL</h3>
-            <p>Los mejores Funkos de tus personajes favoritos </p>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img src="./img/llavero.jpg" class="d-block w-100" alt="llavero">
-            <div class="carousel-caption d-none d-md-block">
-            <h3>LLAVEROS OFICIALES</h3>
-            <p>LLeva el poder de tus superheroes en tu bolsillo</p>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img src="./img/poster.jpg" class="d-block w-100" alt="poster">
-            <div class="carousel-caption d-none d-md-block">
-            <h3>POSTERS A COLOR</h3>
-            <p>Empapela tu cuarto con todos los personajes del universo Marvel</p>
-            </div>
-        </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-        </button>
     </div>
-    <select class="btn btn-primary btn-lg" name="lista" id="lista"></select>
+    
+    </div>
+    </div>
     <script src="./js/bootstrap.js"></script>
     <script src="./js/index.js"></script>
 </body>
