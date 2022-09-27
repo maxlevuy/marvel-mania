@@ -39,9 +39,3 @@ header, .alert{
 .hide, .remove{
     display: none;
 }
-
-.logo{
-    animation:both;
-    zoom: 1;
-    transition: 2s;
-}
