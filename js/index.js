@@ -30,10 +30,14 @@ function addItemCarrito(newItem){
 
   const alert = document.querySelector('.alert')
 
-  setTimeout( function(){
-    alert.classList.add('hide')
-  }, 2000)
-    alert.classList.remove('hide')
+  Swal.fire({
+    title: 'Nice',
+    text: 'Añadido a tu carrito',
+    imageUrl: 'https://c.tenor.com/0-e7d7ct3G0AAAAC/shut-up-and-take-my-money-futurama.gif',
+    imageWidth: 400,
+    imageHeight: 250,
+    imageAlt: 'Custom image',
+  })
 
   const InputElemnto = tbody.getElementsByClassName('input__elemento')
   for(let i =0; i < carrito.length ; i++){
