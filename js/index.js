@@ -142,3 +142,4 @@ window.onload = function(){
     renderCarrito()
   }
 }
+
