@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./style/styles.css">
 </head>
 <body>
-    <a class="navbar-brand" href="./index.html"><img class="btn btn-floating img-fluid min-vw-70" src="./img/logo.png" alt="logo"></a>
+    <a class="navbar-brand" href="./index.html"><img class="btn btn-floating logo img-fluid min-vw-70" src="./img/logo.png" alt="logo"></a>
     <header class="container-fluid bg-dark position-sticky top-0">
     <ul
         class="nav nav-pills mb-3 py-3 container"
@@ -58,10 +58,10 @@
     </ul>
     </header>
     <div class="alert container position-sticky top-0 alert-primary hide" role="alert">
-    Producto Añadido al carrito!
+    Añadido al carrito!
     </div>
     <div class="alert container position-sticky top-0 alert-danger remove" role="alert">
-    Producto removido!
+    Quitado del carrito!
     </div>
     <div class="tab-content" id="pills-tabContent">
     <div
@@ -79,7 +79,7 @@
         id="pills-profile"
         role="tabpanel"
         aria-labelledby="pills-profile-tab">
-        <h2 class="h4 m-4 text-primary">Productos</h2>
+        <h2 class="h4 m-4 text-primary">Catálogo de productos</h2>
         <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
         <div class="col d-flex justify-content-center mb-4">
             <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
@@ -218,6 +218,17 @@
     
     </div>
     </div>
+
+    <!--Footer-->
+    <footer class="bg-dark text-center text-white">
+        <div class="p-3 pb-1" style="background-color: rgba(0, 0, 0, 0.748);">
+            <section class="mb-4">
+                <img class="center" src="./img/logo.png">
+            </section>
+        </div>
+        <div class="text-center p-2 quote" style="background-color: rgba(0, 0, 0, 0.748);">© 2022 MarvelManía
+        </div>
+    </footer>
     <script src="./js/bootstrap.js"></script>
     <script src="./js/index.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
