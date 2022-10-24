@@ -7,15 +7,16 @@
     <title>MarvelManía - La tienda n°1 del condado</title>
     <link rel="stylesheet" href="./style/bootstrap.css">
     <link rel="stylesheet" href="./style/styles.css">
+    <link rel="icon" href="./img/favicon.ico">
 </head>
 <body>
-    <a class="navbar-brand" href="./index.html"><img class="btn btn-floating logo img-fluid min-vw-70" src="./img/logo.png" alt="logo"></a>
+    <!--navbar logo-->
+    <a class="navbar-brand" href="./index.html"><img class="btn btn-floating logo img-fluid center1" src="./img/mlogo.gif" alt="logo"></a>
     <header class="container-fluid bg-dark position-sticky top-0">
     <ul
         class="nav nav-pills mb-3 py-3 container"
         id="pills-tab"
-        role="tablist"
-    >
+        role="tablist">
         <li class="nav-item text-primary" role="presentation">
         <a
             class="nav-link "
@@ -26,8 +27,7 @@
             role="tab"
             aria-controls="pills-home"
             aria-selected="true"
-            >Home</a
-        >
+            >Home</a>
         </li>
         <li class="nav-item" role="presentation">
         <a
@@ -39,8 +39,7 @@
             role="tab"
             aria-controls="pills-profile"
             aria-selected="false"
-            >Productos</a
-        >
+            >Productos</a>
         </li>
         <li class="nav-item" role="presentation">
         <a
@@ -52,8 +51,7 @@
             role="tab"
             aria-controls="pills-contact"
             aria-selected="false"
-            >Carrito</a
-        >
+            >Carrito</a>
         </li>
     </ul>
     </header>
@@ -71,15 +69,18 @@
         aria-labelledby="pills-home-tab">
         1
     </div>
-    <section>
-        <video class="min-vw-100" src="./video/video.mp4" controls autoplay></video>
-    </section>
+            <br>    <!--video inst-->
+        <section>
+            <video class="center1" src="./video/video.mp4" controls autoplay></video>
+        </section>
+        <br>
+    <!--catalogo-->
     <div
         class="tab-pane fade show active container"
         id="pills-profile"
         role="tabpanel"
         aria-labelledby="pills-profile-tab">
-        <h2 class="h4 m-4 text-primary">Catálogo de productos</h2>
+        <h2 class="h1 m-4 text-primary center1">Catálogo de productos</h2>
         <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
         <div class="col d-flex justify-content-center mb-4">
             <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
@@ -218,15 +219,14 @@
     
     </div>
     </div>
-
-    <!--Footer-->
+    <!--footer-->
     <footer class="bg-dark text-center text-white">
         <div class="p-3 pb-1" style="background-color: rgba(0, 0, 0, 0.748);">
             <section class="mb-4">
-                <img class="center" src="./img/logo.png">
+                <img class="center1" src="./img/logo.png">
             </section>
         </div>
-        <div class="text-center p-2 quote" style="background-color: rgba(0, 0, 0, 0.748);">© 2022 MarvelManía
+        <div class="text-center p-2 quote" style="background-color: rgba(0, 0, 0, 0.748);">© 2022 MarvelManía 
         </div>
     </footer>
     <script src="./js/bootstrap.js"></script>

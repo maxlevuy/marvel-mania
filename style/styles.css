@@ -39,3 +39,11 @@ header, .alert{
 .hide, .remove{
     display: none;
 }
+
+.center1 {
+    display: block;
+    margin-left: 0px;
+    margin-right: auto;
+    width: 100%;
+}
+

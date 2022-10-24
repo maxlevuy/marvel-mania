@@ -31,7 +31,7 @@ function addItemCarrito(newItem){
   const alert = document.querySelector('.alert')
 
   Swal.fire({
-    title: 'Nice',
+    title: 'Excelente!',
     text: 'Añadido a tu carrito',
     imageUrl: 'https://c.tenor.com/0-e7d7ct3G0AAAAC/shut-up-and-take-my-money-futurama.gif',
     imageWidth: 400,
@@ -92,8 +92,27 @@ function CarritoTotal(){
     Total = Total + precio*item.cantidad
   })
 
+
   itemCartTotal.innerHTML = `Total $${Total}`
   addLocalStorage()
+
+  const comprar = document.querySelector('.btn-success');
+
+comprar.addEventListener('click', ()=>{
+    
+  Swal.fire({
+    title: 'Compra realizada!',
+    text: 'Nos pondremos en contacto para coordinar el pedido',
+    imageUrl: 'https://media.tenor.com/h6DdoEuQgJEAAAAC/robert-downey-jr-rdj.gif',
+    imageWidth: 450,
+    imageHeight: 300,
+    imageAlt: 'Custom image',
+  });
+    localStorage.clear();
+    tbody.innerHTML = '';
+    const itemCartTotal = document.querySelector('.itemCartTotal');
+    itemCartTotal.innerHTML = '';    
+});
 }
 
 function removeItemCarrito(e){
@@ -106,13 +125,16 @@ function removeItemCarrito(e){
       carrito.splice(i, 1)
     }
   }
+  
+  Swal.fire({
+    title: 'Recibido',
+    text: 'Quitado de tu carrito',
+    imageUrl: 'https://media3.giphy.com/media/xUOwG9eMUyBknKhOWQ/giphy.gif?cid=790b7611e46ac15fed051a60391fa93ea4d6196aec7f24f2&rid=giphy.gif&ct=g',
+    imageWidth: 400,
+    imageHeight: 250,
+    imageAlt: 'Custom image',
+  })
 
-  const alert = document.querySelector('.remove')
-
-  setTimeout( function(){
-    alert.classList.add('remove')
-  }, 2000)
-    alert.classList.remove('remove')
 
   tr.remove()
   CarritoTotal()
